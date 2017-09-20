@@ -4,7 +4,7 @@
   "description": "Plugin to add HTTP Route tags for documenting HTTP endpoints",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'boo on me I have no tests.'",
+    "test": "ava",
     "clean": "rm -rf ./out/*;",
     "example1": "rm -rf ./out/*; ./node_modules/.bin/jsdoc -c ./examples/jsdoc.conf --readme ./examples/README.md; true"
   },
@@ -34,5 +34,14 @@
   },
   "peerDependencies": {
     "jsdoc": "^3.4.3"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "ava": {
+    "files": [
+      "spec/**/*.spec.js"
+    ]
   }
 }

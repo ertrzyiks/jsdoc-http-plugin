@@ -12,3 +12,4 @@ volumes/
 *.tgz
 scripts/node_modules
 /out
+spec/build
